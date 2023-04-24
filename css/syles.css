@@ -1,0 +1,223 @@
+/* *General stiles* */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* *Navigation styles */
+
+header {
+  background-color: #89cfeb;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-navigation .logo {
+  width: 60px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.main-navigation .logo img {
+  width: 100%;
+}
+
+.main-navigation .list-links {
+  display: inline-flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-navigation .list-links li {
+  display: block;
+  list-style: none;
+}
+
+.main-navigation .list-links li a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.main-navigation .list-links li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* *Hero styles */
+
+.hero {
+  background: linear-gradient(135deg, #303030 50%, #e6e6e6 50%);
+  height: 85vh;
+  width: 100%;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.ipn-logo {
+  width: 35%;
+  border-radius: 100%;
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  transform: translateX(-200%);
+  animation: ipnEntrance 1s ease-in-out forwards;
+}
+
+.hero h2 {
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+    4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+    4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+    7px 6px 1px #cccccc;
+  font-size: 5em;
+  text-transform: uppercase;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transform: translateX(-200%);
+  animation: titleEntrance 1s ease-in-out forwards;
+  text-align: center;
+}
+
+/* *General articles styles */
+
+.articles {
+  background-color: rgb(212, 226, 235);
+  position: relative;
+  z-index: 1;
+}
+
+/* *Audio robot Navigation */
+
+.robot {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.robot {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.robot .audio-button {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  margin: 10px 0px;
+  background-color: #93d0e9;
+  transition: background ease-in-out 0.3s;
+  cursor: pointer;
+  width: 30%;
+}
+
+.frequency-display {
+  width: 90%;
+  height: 150px;
+  background-color: black;
+}
+
+/* *Overlay selection buttons */
+
+.overlay-selection-btns {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: none;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
+
+.overlay-selection-btns.active {
+  display: flex;
+}
+
+.selection-buttons {
+  height: 250px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.sclt-0{display: none;}
+.sclt-0.active{display: flex;}
+.sclt-1{display: none;}
+.sclt-1.active{display: flex;}
+.sclt-2{display: none;}
+.sclt-2.active{display: flex;}
+.sclt-3{display: none;}
+.sclt-3.active{display: flex;}
+.sclt-4{display: none;}
+.sclt-4.active{display: flex;}
+
+.select-answer {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.select-answer.active {
+  display: flex;
+}
+
+/* *Animations */
+
+@keyframes ipnEntrance {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes titleEntrance {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

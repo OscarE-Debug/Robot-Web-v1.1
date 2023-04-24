@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/syles.css">
+    <script src="js/main.js" defer></script>
+    <title>Doctor Amor | IPN</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-navigation">
+                <a href="#" class="logo"><img src="img/doctor robot.png" alt="doctor robot"></a>
+                <ul class="list-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Prueba nuestro bot</a></li>
+                    <li><a href="#">Nuestra misión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Un proyecto de...</h2>
+            <img class="ipn-logo" src="img/ipn logo en blanco.png" alt="logo politecnico color blanco">
+            <h2>En colaboracion con...</h2>
+        </div>
+    </section>
+
+    <section class="articles">
+        <div class="container">
+            <article class="robot">
+                <button class="intro-btn audio-button" data-src="audio/intro_RTS.mp3">Iniciar bot</button>
+                <div class="overlay-selection-btns">
+                    <div class="selection-buttons active">
+                        <div class="select-answer slct-0 active">
+                            <button class="audio-button positive" data-src="audio/positivo1.mp3">Si</button>
+                            <button class="audio-button negative" data-src="audio/negativo1.mp3">No</button>
+                        </div>
+                        <div class="select-answer slct-1">
+                            <button class="audio-button positive" data-src="audio/positivo2.mp3">Si</button>
+                            <button class="audio-button negative" data-src="audio/negativo2.mp3">No</button>
+                        </div>
+                        <div class="select-answer slct-2">
+                            <button class="audio-button positive" data-src="audio/positivo3.mp3">Si</button>
+                            <button class="audio-button negative" data-src="audio/negativo3.mp3">No</button>
+                        </div>
+                        <div class="select-answer slct-3">
+                            <button class="audio-button positive" data-src="audio/positivo4.mp3">Si</button>
+                            <button class="audio-button negative" data-src="audio/negativo4.mp3">No</button>
+                        </div>
+                        <div class="select-answer slct-4">
+                            <button class="audio-button positive" data-src="audio/positivo5.mp3">Si</button>
+                            <button class="audio-button negative" data-src="audio/negativo5.mp3">No</button>
+                        </div>
+                    </div>
+                </div>
+                <canvas class="frequency-display"></canvas>
+                <audio id="audio" src=""></audio>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>
