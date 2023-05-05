@@ -23,6 +23,7 @@ const selectButton4 = document.querySelector(".slct-4");
 
 // !SPECIAL DOM ELEMENTS
 
+const audio0 = "audio/preg1.mp3";
 const audio1 = "audio/preg2.mp3";
 const audio2 = "audio/preg3.mp3";
 const audio3 = "audio/preg4.mp3";
@@ -118,32 +119,78 @@ const playAudio = async (src) => {
   if (initialSource === src) {
     source.addEventListener("ended", () => {
       setTimeout(function () {
-        playAudio(audio1);
+        playAudio(audio0);
       }, 500);
     });
-  } else if (audio1 === src) {
+  } else if (audio0 === src) {
     source.addEventListener("ended", () => {
       overlay.classList.add("active");
     });
   } else if (audioPositive1 === src) {
+    selectionButtons.classList.remove("active");
     source.addEventListener("ended", () => {
       setTimeout(function () {
         playAudio(audio2);
       }, 500);
     });
   } else if (audioNegative1 === src) {
+    selectionButtons.classList.remove("active");
+    source.addEventListener("ended", () => {
+      setTimeout(function () {
+        playAudio(audio1);
+      }, 500);
+    });
+  } else if (audio1 === src) {
     source.addEventListener("ended", () => {
       selectionButtons.classList.add("active");
-      setTimeout(function () {
-        playAudio(audio2);
-      }, 500);
+      selectButton0.classList.remove("active");
+      selectButton1.classList.add("active");
+    });
+  } else if (audioPositive2 === src) {
+    selectButtons.classList.remove("active");
+    source.addEventListener("ended", () => {
+      playAudio(audio2);
+    });
+  } else if (audioNegative2 === src) {
+    selectionButtons.classList.remove("active");
+    source.addEventListener("ended", () => {
+      playAudio(audio2);
     });
   } else if (audio2 === src) {
     source.addEventListener("ended", () => {
-      selectButton0.classList.remove("active");
-      selectButton1.classList.add(".active");
+      selectionButtons.classList.add("active");
+      selectButton1.classList.remove("active");
+      selectButton2.classList.add("active");
     });
-  } else if (audioPositive2 === src) {
+  } else if (audioPositive3 === src) {
+    selectionButtons.classList.remove("active");
+    source.addEventListener("ended", () => {
+      playAudio(audio3);
+    });
+  } else if (audioNegative3 === src) {
+    selectionButtons.classList.remove("active");
+    source.addEventListener("ended", () => {
+      playAudio(audio3);
+    });
+  } else if (audio3 === src) {
+    selectionButtons.classList.remove("active");
+    source.addEventListener("ended", () => {
+      selectButton2.classList.remove("active");
+      selectButton3.classList.add("active");
+      selectionButtons.classList.add("active");
+    });
+  } else if (audioPositive4 === src) {
+    selectionButtons.classList.remove("active");
+    source.addEventListener("ended", () => {
+      playAudio(audio4);
+    });
+  } else if (audioNegative4 === src) {
+    selectionButtons.classList.remove("active");
+    source.addEventListener("ended", () => {
+      playAudio(audio4);
+    });
+  } else if (audio4 === src) {
+    console.log("ya casi terminas campeón :)");
   }
 };
 
