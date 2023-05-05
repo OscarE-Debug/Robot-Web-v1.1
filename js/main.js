@@ -7,6 +7,7 @@ let analyzer;
 let isPlaying = false;
 
 // *DOM Elements
+
 const audioButtons = document.querySelectorAll(".audio-button");
 const canvas = document.querySelector(".frequency-display");
 const audio = document.querySelector("#audio");

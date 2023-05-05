@@ -202,36 +202,16 @@ header {
   display: flex;
 }
 
-.sclt-0 {
-  display: none;
-}
-.sclt-0.active {
-  display: flex;
-}
-.sclt-1 {
-  display: none;
-}
-.sclt-1.active {
-  display: flex;
-}
-.sclt-2 {
-  display: none;
-}
-.sclt-2.active {
-  display: flex;
-}
-.sclt-3 {
-  display: none;
-}
-.sclt-3.active {
-  display: flex;
-}
-.sclt-4 {
-  display: none;
-}
-.sclt-4.active {
-  display: flex;
-}
+.sclt-0 {display: none;}
+.sclt-0.active {display: flex;}
+.sclt-1 {display: none;}
+.sclt-1.active {display: flex;}
+.sclt-2 {display: none;}
+.sclt-2.active {display: flex;}
+.sclt-3 {display: none;}
+.sclt-3.active {display: flex;}
+.sclt-4 {display: none;}
+.sclt-4.active {display: flex;}
 
 .select-answer {
   display: none;
