@@ -195,6 +195,11 @@ header {
   justify-content: center;
   background-color: #000;
   border-radius: 10px;
+  display: none;
+}
+
+.selection-buttons.active {
+  display: flex;
 }
 
 .sclt-0 {
