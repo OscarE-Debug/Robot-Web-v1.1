@@ -111,6 +111,25 @@ header {
   text-align: center;
 }
 
+.hero h3 {
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+    4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+    4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+    7px 6px 1px #cccccc;
+  font-size: 5em;
+  text-transform: uppercase;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transform: translateX(-200%);
+  animation: titleEntrance2 1s 1s ease-in-out forwards;
+  text-align: center;
+}
+
 /* *General articles styles */
 
 .articles {
@@ -178,16 +197,36 @@ header {
   border-radius: 10px;
 }
 
-.sclt-0{display: none;}
-.sclt-0.active{display: flex;}
-.sclt-1{display: none;}
-.sclt-1.active{display: flex;}
-.sclt-2{display: none;}
-.sclt-2.active{display: flex;}
-.sclt-3{display: none;}
-.sclt-3.active{display: flex;}
-.sclt-4{display: none;}
-.sclt-4.active{display: flex;}
+.sclt-0 {
+  display: none;
+}
+.sclt-0.active {
+  display: flex;
+}
+.sclt-1 {
+  display: none;
+}
+.sclt-1.active {
+  display: flex;
+}
+.sclt-2 {
+  display: none;
+}
+.sclt-2.active {
+  display: flex;
+}
+.sclt-3 {
+  display: none;
+}
+.sclt-3.active {
+  display: flex;
+}
+.sclt-4 {
+  display: none;
+}
+.sclt-4.active {
+  display: flex;
+}
 
 .select-answer {
   display: none;
@@ -214,6 +253,15 @@ header {
 }
 
 @keyframes titleEntrance {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes titleEntrance2 {
   from {
     transform: translateX(-200%);
   }
