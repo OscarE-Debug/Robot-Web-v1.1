@@ -35,35 +35,49 @@
 
     <section class="articles">
         <div class="container">
-            <article class="robot">
-                <button class="intro-btn audio-button" data-src="audio/intro_RTS.mp3">Iniciar bot</button>
-                <div class="overlay-selection-btns">
-                    <div class="selection-buttons active">
-                        <div class="select-answer slct-0 active">
-                            <button class="audio-button positive" data-src="audio/positivo1.mp3">Si</button>
-                            <button class="audio-button negative" data-src="audio/negativo1.mp3">No</button>
-                        </div>
-                        <div class="select-answer slct-1">
-                            <button class="audio-button positive" data-src="audio/positivo2.mp3">Si</button>
-                            <button class="audio-button negative" data-src="audio/negativo2.mp3">No</button>
-                        </div>
-                        <div class="select-answer slct-2">
-                            <button class="audio-button positive" data-src="audio/positivo3.mp3">Si</button>
-                            <button class="audio-button negative" data-src="audio/negativo3.mp3">No</button>
-                        </div>
-                        <div class="select-answer slct-3">
-                            <button class="audio-button positive" data-src="audio/positivo4.mp3">Si</button>
-                            <button class="audio-button negative" data-src="audio/negativo4.mp3">No</button>
-                        </div>
-                        <div class="select-answer slct-4">
-                            <button class="audio-button positive" data-src="audio/positivo5.mp3">Si</button>
-                            <button class="audio-button negative" data-src="audio/negativo5.mp3">No</button>
+            <div class="robot-desc">
+                <article class="description-robot">
+                    <p class="text text-robot">
+                        Bienvenido/a a nuestra página web diseñada para ayudarte a evaluar tus relaciones personales.
+                        Esta plataforma fue creada con el objetivo de brindarte herramientas y recursos para identificar
+                        comportamientos tóxicos en tus relaciones, ya sea con amigos, familiares o parejas románticas.
+                        <br>
+                        Nuestra encuesta está diseñada para ayudarte a reflexionar sobre las dinámicas de poder en tus
+                        relaciones, cómo te hacen sentir y si estás cómodo/a con ellas. Te haremos preguntas directas y
+                        específicas para que puedas evaluar tu relación de manera objetiva y comprender mejor lo que
+                        está sucediendo.
+                    </p>
+                </article>
+                <article class="robot">
+                    <button class="intro-btn audio-button" data-src="audio/intro_RTS.mp3">Iniciar bot</button>
+                    <div class="overlay-selection-btns">
+                        <div class="selection-buttons active">
+                            <div class="select-answer slct-0 active">
+                                <button class="audio-button positive" data-src="audio/positivo1.mp3">Si</button>
+                                <button class="audio-button negative" data-src="audio/negativo1.mp3">No</button>
+                            </div>
+                            <div class="select-answer slct-1">
+                                <button class="audio-button positive" data-src="audio/positivo2.mp3">Si</button>
+                                <button class="audio-button negative" data-src="audio/negativo2.mp3">No</button>
+                            </div>
+                            <div class="select-answer slct-2">
+                                <button class="audio-button positive" data-src="audio/positivo3.mp3">Si</button>
+                                <button class="audio-button negative" data-src="audio/negativo3.mp3">No</button>
+                            </div>
+                            <div class="select-answer slct-3">
+                                <button class="audio-button positive" data-src="audio/positivo4.mp3">Si</button>
+                                <button class="audio-button negative" data-src="audio/negativo4.mp3">No</button>
+                            </div>
+                            <div class="select-answer slct-4">
+                                <button class="audio-button positive" data-src="audio/positivo5.mp3">Si</button>
+                                <button class="audio-button negative" data-src="audio/negativo5.mp3">No</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <canvas class="frequency-display"></canvas>
-                <audio id="audio" src=""></audio>
-            </article>
+                    <canvas class="frequency-display"></canvas>
+                    <audio id="audio" src=""></audio>
+                </article>
+            </div>
         </div>
     </section>
 </body>

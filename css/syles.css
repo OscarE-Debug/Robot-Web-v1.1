@@ -138,12 +138,10 @@ header {
   z-index: 1;
 }
 
-/* *Audio robot Navigation */
-
-.robot {
+.robot-desc {
   display: flex;
   align-items: center;
-  padding: 10px;
+  justify-content: space-around;
 }
 
 .robot {
@@ -152,6 +150,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  width: 30%;
 }
 
 .robot .audio-button {
@@ -167,8 +167,12 @@ header {
 
 .frequency-display {
   width: 90%;
-  height: 150px;
+  height: 50px;
   background-color: black;
+}
+
+.description-robot {
+  width: 60%;
 }
 
 /* *Overlay selection buttons */
