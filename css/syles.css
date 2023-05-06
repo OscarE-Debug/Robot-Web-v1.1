@@ -128,6 +128,7 @@ header {
   transform: translateX(-200%);
   animation: titleEntrance2 1s 1s ease-in-out forwards;
   text-align: center;
+  display: none;
 }
 
 /* *General articles styles */
@@ -142,15 +143,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0px;
 }
 
 .robot {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   width: 30%;
 }
 
@@ -162,12 +163,13 @@ header {
   background-color: #93d0e9;
   transition: background ease-in-out 0.3s;
   cursor: pointer;
-  width: 30%;
+  width: 40%;
 }
 
 .frequency-display {
-  width: 90%;
-  height: 50px;
+  height: 100px;
+  top: 147;
+  width: 100%;
   background-color: black;
 }
 
@@ -186,6 +188,7 @@ header {
   width: 100%;
   z-index: 2;
   top: 0;
+  right: 0;
 }
 
 .overlay-selection-btns.active {

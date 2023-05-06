@@ -245,3 +245,11 @@ negativeButton.forEach((button) => {
     }, 500);
   });
 });
+
+// *Robot expressions :D
+
+const introButton = document.querySelector(".intro-btn");
+
+introButton.addEventListener("click", ()=>{
+  console.log("hola :D")
+});

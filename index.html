@@ -50,33 +50,35 @@
                 </article>
                 <article class="robot">
                     <button class="intro-btn audio-button" data-src="audio/intro_RTS.mp3">Iniciar bot</button>
-                    <div class="overlay-selection-btns">
-                        <div class="selection-buttons active">
-                            <div class="select-answer slct-0 active">
-                                <button class="audio-button positive" data-src="audio/positivo1.mp3">Si</button>
-                                <button class="audio-button negative" data-src="audio/negativo1.mp3">No</button>
-                            </div>
-                            <div class="select-answer slct-1">
-                                <button class="audio-button positive" data-src="audio/positivo2.mp3">Si</button>
-                                <button class="audio-button negative" data-src="audio/negativo2.mp3">No</button>
-                            </div>
-                            <div class="select-answer slct-2">
-                                <button class="audio-button positive" data-src="audio/positivo3.mp3">Si</button>
-                                <button class="audio-button negative" data-src="audio/negativo3.mp3">No</button>
-                            </div>
-                            <div class="select-answer slct-3">
-                                <button class="audio-button positive" data-src="audio/positivo4.mp3">Si</button>
-                                <button class="audio-button negative" data-src="audio/negativo4.mp3">No</button>
-                            </div>
-                            <div class="select-answer slct-4">
-                                <button class="audio-button positive" data-src="audio/positivo5.mp3">Si</button>
-                                <button class="audio-button negative" data-src="audio/negativo5.mp3">No</button>
-                            </div>
-                        </div>
+                    <div class="audio-ctx">
+                        <canvas class="frequency-display"></canvas>
+                        <audio id="audio" src=""></audio>
                     </div>
-                    <canvas class="frequency-display"></canvas>
-                    <audio id="audio" src=""></audio>
                 </article>
+            </div>
+        </div>
+        <div class="overlay-selection-btns">
+            <div class="selection-buttons active">
+                <div class="select-answer slct-0 active">
+                    <button class="audio-button positive" data-src="audio/positivo1.mp3">Si</button>
+                    <button class="audio-button negative" data-src="audio/negativo1.mp3">No</button>
+                </div>
+                <div class="select-answer slct-1">
+                    <button class="audio-button positive" data-src="audio/positivo2.mp3">Si</button>
+                    <button class="audio-button negative" data-src="audio/negativo2.mp3">No</button>
+                </div>
+                <div class="select-answer slct-2">
+                    <button class="audio-button positive" data-src="audio/positivo3.mp3">Si</button>
+                    <button class="audio-button negative" data-src="audio/negativo3.mp3">No</button>
+                </div>
+                <div class="select-answer slct-3">
+                    <button class="audio-button positive" data-src="audio/positivo4.mp3">Si</button>
+                    <button class="audio-button negative" data-src="audio/negativo4.mp3">No</button>
+                </div>
+                <div class="select-answer slct-4">
+                    <button class="audio-button positive" data-src="audio/positivo5.mp3">Si</button>
+                    <button class="audio-button negative" data-src="audio/negativo5.mp3">No</button>
+                </div>
             </div>
         </div>
     </section>
