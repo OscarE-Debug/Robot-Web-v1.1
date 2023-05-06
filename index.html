@@ -14,7 +14,7 @@
     <header>
         <div class="container">
             <nav class="main-navigation">
-                <a href="#" class="logo"><img src="img/doctor robot.png" alt="doctor robot"></a>
+                <a href="#" class="logo"><img src="img/blue heart.jpeg" alt="doctor robot"></a>
                 <ul class="list-links">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Sobre nosotros</a></li>
@@ -50,9 +50,14 @@
                 </article>
                 <article class="robot">
                     <button class="intro-btn audio-button" data-src="audio/intro_RTS.mp3">Iniciar bot</button>
-                    <div class="audio-ctx">
+                    <audio id="audio" src=""></audio>
+                    <div class="body-robot">
                         <canvas class="frequency-display"></canvas>
-                        <audio id="audio" src=""></audio>
+                        <div class="body-head-foot">
+                            <img src="img/doctor robot.png" alt="">
+                            <img src="img/doctor robot mandibula.png" alt="">
+                            <img src="img/doctor robot corazon.png" alt="">
+                        </div>
                     </div>
                 </article>
             </div>
