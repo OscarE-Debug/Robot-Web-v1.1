@@ -195,6 +195,14 @@ const playAudio = async (src) => {
       selectButton4.classList.add("active");
       selectionButtons.classList.add("active");
     });
+  } else if (audioPositive5 === src) {
+    source.addEventListener("ended", () => {
+      overlay.classList.remove("active");
+    });
+  } else if (audioNegative5 === src) {
+    source.addEventListener("ended", () => {
+      overlay.classList.remove("active");
+    });
   }
 };
 
@@ -249,7 +257,14 @@ negativeButton.forEach((button) => {
 // *Robot expressions :D
 
 const introButton = document.querySelector(".intro-btn");
+const robotJaw = document.querySelector(".robot-jaw");
+const robotJaw2 = document.querySelector(".robot-jaw-2");
 
-introButton.addEventListener("click", ()=>{
-  console.log("hola :D")
+introButton.addEventListener("click", () => {
+  robotJaw.classList.add("removing-active");
+  setTimeout(function () {
+    robotJaw.classList.remove("removing-active");
+    robotJaw.classList.add("innactive");
+  }, 500);
+  robotJaw2.classList.add("active");
 });

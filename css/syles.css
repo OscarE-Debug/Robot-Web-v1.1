@@ -149,7 +149,8 @@ header {
   display: flex;
   flex-direction: column;
   width: 30%;
-  height: 360px;
+  height: 460px;
+  align-items: center;
 }
 
 .audio-button {
@@ -170,9 +171,8 @@ header {
 .frequency-display {
   height: 45px;
   width: 167px;
-  margin-top: 147px;
+  margin-top: 108px;
   background-color: black;
-  position: relative;
 }
 
 .description-robot {
@@ -194,12 +194,52 @@ header {
 
 .body-head-foot {
   position: absolute;
-  right: 0;
+  top: 0;
+  left: -68px;
 }
 
 .body-head-foot img {
   position: absolute;
+  object-fit: cover;
   width: 300px;
+}
+
+.robot-jaw-2 {
+  display: none;
+}
+
+.robot-jaw-2.active {
+  display: block;
+}
+
+.robot-jaw.innactive {
+  display: none;
+}
+
+/* *About us */
+
+#about-us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+  flex-direction: column;
+}
+
+.img-about-us {
+  width: 40%;
+  object-fit: cover;
+}
+
+.text-about-us {
+  width: 40%;
+  text-align: justify;
+}
+
+.abt-p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* *Overlay selection buttons */
