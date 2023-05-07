@@ -1,3 +1,17 @@
+// *Hero animations
+
+const titleHero1 = document.querySelector(".title-hero");
+const ipnLogo = document.querySelector(".ipn-logo");
+const titleHero2 = document.querySelector(".title-hero-2");
+const cecyt11Logo = document.querySelector(".cecyt11-logo");
+
+setTimeout(function () {
+  titleHero1.classList.add("innactive");
+  ipnLogo.classList.add("innactive");
+  titleHero2.classList.add("active");
+  cecyt11Logo.classList.add("active");
+}, 5000);
+
 // *Variables audio context
 
 let audioCtx;
@@ -265,6 +279,6 @@ introButton.addEventListener("click", () => {
   setTimeout(function () {
     robotJaw.classList.remove("removing-active");
     robotJaw.classList.add("innactive");
+    robotJaw2.classList.add("active");
   }, 500);
-  robotJaw2.classList.add("active");
 });

@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* *Navigation styles */
@@ -71,6 +72,7 @@ header {
   background: linear-gradient(135deg, #303030 50%, #e6e6e6 50%);
   height: 85vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .hero .container {
@@ -83,16 +85,15 @@ header {
 
 .ipn-logo {
   width: 35%;
-  border-radius: 100%;
   display: block;
   height: 100%;
   object-fit: contain;
   position: absolute;
   transform: translateX(-200%);
-  animation: ipnEntrance 1s ease-in-out forwards;
+  animation: ipnEntrance 5s ease-in-out forwards;
 }
 
-.hero h2 {
+.title-hero {
   text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
     1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
     4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
@@ -107,11 +108,19 @@ header {
   position: relative;
   z-index: 1;
   transform: translateX(-200%);
-  animation: titleEntrance 1s ease-in-out forwards;
+  animation: titleEntrance 5s ease-in-out forwards;
   text-align: center;
 }
 
-.hero h3 {
+.title-hero.innactive {
+  display: none;
+}
+
+.ipn-logo.innactive {
+  display: none;
+}
+
+.title-hero-2 {
   text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
     1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
     4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
@@ -126,9 +135,24 @@ header {
   position: relative;
   z-index: 1;
   transform: translateX(-200%);
-  animation: titleEntrance2 1s 1s ease-in-out forwards;
+  animation: titleEntrance2 2.5s ease-in-out forwards;
   text-align: center;
   display: none;
+}
+
+.title-hero-2.active {
+  display: block;
+}
+
+.cecyt11-logo {
+  position: absolute;
+  display: none;
+  width: 30%;
+  animation: cecytLogoEntrance 2.5s ease-in-out forwards;
+}
+
+.cecyt11-logo.active {
+  display: block;
 }
 
 /* *General articles styles */
@@ -212,11 +236,21 @@ header {
   display: block;
 }
 
+.robot-jaw.removing-active {
+  animation: removingInitialJaw 0.5s ease-in-out forwards;
+}
+
 .robot-jaw.innactive {
   display: none;
 }
 
 /* *About us */
+
+.title {
+  font-size: 2.5em;
+  padding: 10px 0px;
+  text-align: center;
+}
 
 #about-us {
   display: flex;
@@ -224,6 +258,7 @@ header {
   align-items: center;
   padding: 20px 0px;
   flex-direction: column;
+  background-color: rgb(183, 195, 202);
 }
 
 .img-about-us {
@@ -321,25 +356,55 @@ header {
 /* *Animations */
 
 @keyframes ipnEntrance {
-  from {
+  0% {
     transform: translateX(-200%);
   }
-  to {
+  40% {
     transform: translateX(0);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
   }
 }
 
 @keyframes titleEntrance {
-  from {
+  0% {
     transform: translateX(-200%);
   }
-  to {
+  40% {
     transform: translateX(0);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
   }
 }
 
 @keyframes titleEntrance2 {
   from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes removingInitialJaw {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes cecytLogoEntrance {
+  from{
     transform: translateX(-200%);
   }
   to {
